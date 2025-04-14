@@ -1,0 +1,1108 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://i.imgur.com/m8irZKr.jpg'); 
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+header {
+    background: #07285a;
+    color: rgb(3, 1, 1);
+    padding: 1em 0;
+    text-align: center;
+}
+
+.navbar-logo {
+    height: 50px; /* Ajuste o tamanho da imagem */
+    margin-right: 20px; /* Espaçamento entre a imagem e os links */
+    vertical-align: middle; /* Alinha a imagem ao centro verticalmente */
+}
+
+/* Ajuste para o layout da navbar */
+nav {
+    display: flex;
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: space-between; /* Espaça os itens horizontalmente */
+    padding: 0 20px; /* Espaçamento interno */
+    
+}
+.social-links {
+    display: flex;
+    gap: 15px; /* Espaçamento entre os ícones */
+}
+.social-icon {
+    height: 30px; /* Tamanho dos ícones */
+    width: 30px;
+    transition: transform 0.3s ease; /* Animação ao passar o mouse */
+}
+.social-icon:hover {
+    transform: scale(1.2); /* Aumenta o ícone ao passar o mouse */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Espaçamento entre os links */
+    margin: 0 auto;
+}
+
+nav ul li {
+    display: inline-block;
+    text-align: center;
+}
+
+nav ul li a {
+    color: rgba(255, 255, 255, 0.938); /* Cor inicial */
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Transição suave */
+    text-align: center;
+}
+
+nav ul li a:hover {
+    color: #ffffff; /* Cor do texto ao passar o mouse */
+    background-color: #0004ff; /* Fundo ao passar o mouse */
+    transform: scale(1.1); /* Aumenta levemente o tamanho */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adiciona sombra */
+    text-align: center;
+}
+main {
+    padding: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+
+}
+
+section h1{
+    margin-bottom: 2em;
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background: #000000;
+    color: rgb(50, 54, 255);
+    padding: 0.1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.galeria {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilos para a seção Projetos */
+#projetos {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2em;
+}
+
+/* Título da seção de Projetos */
+#projetos h2 {
+    color: #007BFF;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* Estilo da galeria de projetos */
+.galeria {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.galeria .projeto {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 1em;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.galeria .projeto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+.galeria .projeto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+}
+.galeria .projeto p {
+    font-size: 1em;
+    color: #f5f5f5;
+}
+
+/* Estilo individual de cada projeto */
+.projeto {
+    border: 1px solid #cccccc;
+    padding: 1em;
+    text-align: center;
+    width: calc(33.333% - 2em);
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.726); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+/* Efeito de hover para aumentar o projeto */
+.projeto:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo da imagem dentro de cada projeto */
+.projeto img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0.5em;
+    border-radius: 5px;
+}
+
+/* Links dentro da seção de projetos */
+.projeto a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    display: block;
+    margin-top: 0.5em;
+    transition: color 0.3s ease;
+}
+
+.projeto a:hover {
+    color: #0065b8;
+}
+
+/* Responsividade: ajuste para dispositivos menores */
+@media screen and (max-width: 768px) {
+    .projeto {
+        width: calc(50% - 2em);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .projeto {
+        width: 100%;
+    }
+}
+/* Animação de fade-in para seções */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Botões estilizados */
+button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #000000;
+}
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    resize: none;
+    height: 100px;
+}
+
+form button {
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #000000;
+}
+/* Estilos para a seção Explorar */
+#explorar {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro com transparência */
+    color: #ffffff; /* Texto branco */
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2em;
+}
+
+#explorar h2 {
+    color: #007BFF; /* Azul para o título */
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#explorar h3 {
+    color: #ffffff; /* Texto branco */
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+#explorar .links h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: #ffffff;
+}
+
+#explorar .links ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#explorar ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+#explorar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo com leve transparência */
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+#explorar ul li a:hover {
+    color: #000000;
+    background-color: #ffffff;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+#explorar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo com leve transparência */
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Adicionar uma animação de fade-in para os links */
+@keyframes fadeInLinks {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#explorar .links ul li {
+    animation: fadeInLinks 1s ease-out;
+}
+#sobre {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+#sobre h1 {
+    color: #007BFF;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+#sobre img {
+    width: 150px; /* Ajuste conforme necessário */
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+    transition: transform 0.3s ease; 
+    cursor: pointer; 
+}
+
+#sobre p {
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+#sobre img.zoomed {
+    transform: scale(1.5); /* Aumenta a imagem */
+}
+#habilidades {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2em;
+}
+
+#habilidades h2 {
+    color: #007BFF;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#habilidades ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0;
+    text-align: center; /* Centraliza o texto da lista */
+}
+
+#habilidades ul li {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin: 0 auto; /* Centraliza os itens */
+    display: block; /* Garante que os itens fiquem um abaixo do outro */
+}
+
+ /* Estilos para a seção Contatos */
+ #contato {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2em;
+}
+
+/* Título da seção de Contatos */
+#contato h2 {
+    color: #007BFF;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+#contato form label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+}
+#contato form input, #contato form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+#contato form button {
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+#contato form button:hover {
+    background-color: #0056b3;
+}
+/* Estilo do formulário */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+/* Estilo dos campos do formulário */
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Estilo específico para o campo de textarea */
+form textarea {
+    resize: none;
+    height: 150px;
+}
+
+/* Estilo do botão de envio */
+form button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0065b8;
+}
+
+/* Responsividade para dispositivos menores */
+@media screen and (max-width: 768px) {
+    #contato {
+        padding: 1.5em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #contato {
+        padding: 1em;
+    }
+}
+#trabalhos h1{
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-bottom: 1em;
+    text-align: center;
+}
+#trabalhos p{
+    font-size: 1em;
+    color: #ffffff;
+    margin-bottom: 1em;
+    text-align: center;
+}
+#patata {
+    animation: fadeIn 1s ease-out;
+    margin-bottom: 2em;
+    font-size: 1em;
+    color: #ffffff;
+    margin-bottom: 1em;
+    text-align: center;
+}
+#profissoes {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro com transparência */
+    color: #ffffff; /* Texto branco para contraste */
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+#profissoes h1 {
+    color: #007BFF; /* Azul para o título */
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#profissoes p, #profissoes ul li {
+    color: #f5f5f5; /* Texto claro */
+    font-size: 1.2em;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Fundo e texto da seção Tendências */
+#tendencias {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro com transparência */
+    color: #ffffff; /* Texto branco */
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+#tendencias h2 {
+    color: #007BFF; /* Azul para o título */
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#tendencias p, #tendencias ul li {
+    color: #f5f5f5; /* Texto claro */
+    font-size: 1.2em;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Estilos para a galeria */
+#galeria {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro com transparência */
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+#galeria h2 {
+    color: #007BFF; /* Azul para o título */
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#galeria .projeto {
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo com leve transparência */
+    color: #ffffff; /* Texto claro */
+    border-radius: 10px;
+    padding: 1em;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#galeria .projeto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+#galeria .projeto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+}
+
+#galeria .projeto p {
+    color: #f5f5f5; /* Texto claro */
+    font-size: 1em;
+}
+/* Estilos para a página Edge Computing */
+
+/* Seção de detalhes */
+#edge-detalhes {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro com transparência */
+    color: #ffffff; /* Texto branco */
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2em;
+}
+
+#edge-detalhes h2 {
+    color: #007BFF; /* Azul para o título */
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#edge-detalhes p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.imagem-detalhes {
+    display: block;
+    margin: 1em auto;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Seção de vantagens */
+#vantagens {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2em;
+}
+
+#vantagens h2 {
+    color: #007BFF;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.imagem-vantagens {
+    display: block;
+    margin: 1em auto;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Seção de aplicações */
+#aplicacoes {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2em;
+}
+
+#aplicacoes h2 {
+    color: #007BFF;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.imagem-aplicacoes {
+    display: block;
+    margin: 1em auto;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Seção do futuro */
+#futuro-edge {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+#futuro-edge h2 {
+    color: #007BFF;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.imagem-futuro {
+    display: block;
+    margin: 1em auto;
+    max-width: 100%;
+    border-radius: 10px;
+}
+/* Estilos para a página Cibersegurança */
+
+/* Seção principal */
+#ciberseguranca {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro com transparência */
+    color: #ffffff; /* Texto branco */
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2em;
+}
+
+#ciberseguranca h1 {
+    color: #007BFF; /* Azul para o título */
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#ciberseguranca p, #ciberseguranca ul li {
+    font-size: 1.2em;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Seção de importância */
+#importancia {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2em;
+}
+
+#importancia h2 {
+    color: #007BFF;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* Seção de tecnologias */
+#tecnologias {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2em;
+}
+
+#tecnologias h2 {
+    color: #007BFF;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* Galeria */
+#galeria {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+#galeria h2 {
+    color: #007BFF;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#galeria .projeto {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 1em;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#galeria .projeto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+#galeria .projeto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+}
+
+#galeria .projeto p {
+    font-size: 1em;
+    color: #f5f5f5;
+}
+/* Estilos para a página Blockchain */
+
+/* Seção principal */
+#blockchain {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro com transparência */
+    color: #ffffff; /* Texto branco */
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2em;
+}
+
+#blockchain h1 {
+    color: #007BFF; /* Azul para o título */
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#blockchain p, #blockchain ul li {
+    font-size: 1.2em;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Seção de vantagens */
+#vantagens-blockchain {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2em;
+}
+
+#vantagens-blockchain h2 {
+    color: #007BFF;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* Seção de aplicações */
+#aplicacoes-blockchain {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2em;
+}
+
+#aplicacoes-blockchain h2 {
+    color: #007BFF;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* Galeria */
+#galeria {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+#galeria h2 {
+    color: #007BFF;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#galeria .projeto {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 1em;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#galeria .projeto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+#galeria .projeto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+}
+
+#galeria .projeto p {
+    font-size: 1em;
+    color: #f5f5f5;
+}
+/* Estilos para a página Bitcoin */
+
+/* Seção principal */
+#bitcoin {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro com transparência */
+    color: #ffffff; /* Texto branco */
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2em;
+}
+
+#bitcoin h1 {
+    color: #007BFF; /* Azul para o título */
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#bitcoin p, #bitcoin ul li {
+    font-size: 1.2em;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Seção de vantagens */
+#vantagens-bitcoin {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2em;
+}
+
+#vantagens-bitcoin h2 {
+    color: #007BFF;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* Seção de aplicações */
+#aplicacoes-bitcoin {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2em;
+}
+
+#aplicacoes-bitcoin h2 {
+    color: #007BFF;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* Galeria */
+#galeria {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+#galeria h2 {
+    color: #007BFF;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#galeria .projeto {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 1em;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#galeria .projeto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+#galeria .projeto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+}
+
+#galeria .projeto p {
+    font-size: 1em;
+    color: #f5f5f5;
+}
+/* Estilos para a página Automação e Robótica */
+
+/* Seção principal */
+#automacao {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro com transparência */
+    color: #ffffff; /* Texto branco */
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2em;
+}
+
+#automacao h1 {
+    color: #007BFF; /* Azul para o título */
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#automacao p, #automacao ul li {
+    font-size: 1.2em;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Seção de vantagens */
+#vantagens-automacao {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2em;
+}
+
+#vantagens-automacao h2 {
+    color: #007BFF;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* Seção de aplicações */
+#aplicacoes-automacao {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2em;
+}
+
+#aplicacoes-automacao h2 {
+    color: #007BFF;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* Galeria */
+#galeria {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+#galeria h2 {
+    color: #007BFF;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#galeria .projeto {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 1em;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#galeria .projeto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+#galeria .projeto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+}
+
+#galeria .projeto p {
+    font-size: 1em;
+    color: #f5f5f5;
+}
