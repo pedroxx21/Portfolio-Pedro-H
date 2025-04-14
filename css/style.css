@@ -44,12 +44,12 @@ nav {
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
     display: flex;
-    gap: 20px; /* Espaçamento entre os links */
-    margin: 0 auto;
+    flex-direction: row;
+    list-style: none;
+    gap: 20px;
 }
+
 
 nav ul li {
     display: inline-block;
@@ -200,6 +200,26 @@ footer {
         width: calc(50% - 2em);
     }
 }
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Esconde o menu */
+    }
+
+    .menu-toggle {
+        display: block; /* Mostra o botão hambúrguer */
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul.active {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
 
 @media screen and (max-width: 480px) {
     .projeto {
